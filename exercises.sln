@@ -53,13 +53,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "unicode", "unicode\unicode.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "mirror_string", "mirror_string\mirror_string.csproj", "{9BB218FF-ED97-40AB-BE6F-4A425F1662AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "big_numbers_sum", "big_numbers_sum\big_numbers_sum.csproj", "{EFB1AF1A-B215-4C15-BC94-7EBB5A55BA89}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "big_numbers_sum", "big_numbers_sum\big_numbers_sum.csproj", "{EFB1AF1A-B215-4C15-BC94-7EBB5A55BA89}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "big_numbers_mult", "big_numbers_mult\big_numbers_mult.csproj", "{6F3726BD-B35D-4BB2-A73C-8B37AD5DF8BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "big_numbers_mult", "big_numbers_mult\big_numbers_mult.csproj", "{6F3726BD-B35D-4BB2-A73C-8B37AD5DF8BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "number_letter_game", "number_letter_game\number_letter_game.csproj", "{8DC543A1-79C8-46E6-AB5C-7B9177357C24}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "number_letter_game", "number_letter_game\number_letter_game.csproj", "{8DC543A1-79C8-46E6-AB5C-7B9177357C24}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "letters_only", "letters_only\letters_only.csproj", "{AC02C6F8-2A88-42F1-968E-CF143582F69A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "letters_only", "letters_only\letters_only.csproj", "{AC02C6F8-2A88-42F1-968E-CF143582F69A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "stringBuilder_processing", "stringBuilder_processing\stringBuilder_processing.csproj", "{31E3F16A-D5BB-4AE8-89C9-A313246CEC3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "email_send_or_not", "email_send_or_not\email_send_or_not.csproj", "{FB92D4CE-383A-422E-81B9-5CE044E70D88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "karate_string", "karate_string\karate_string.csproj", "{73E9F4F4-E122-446A-AB78-ED62545B1366}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "robot_movement", "robot_movement\robot_movement.csproj", "{8174FDA9-56D7-401A-A3BA-9D2FED775DDF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -183,6 +191,22 @@ Global
 		{AC02C6F8-2A88-42F1-968E-CF143582F69A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC02C6F8-2A88-42F1-968E-CF143582F69A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC02C6F8-2A88-42F1-968E-CF143582F69A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31E3F16A-D5BB-4AE8-89C9-A313246CEC3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31E3F16A-D5BB-4AE8-89C9-A313246CEC3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31E3F16A-D5BB-4AE8-89C9-A313246CEC3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31E3F16A-D5BB-4AE8-89C9-A313246CEC3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB92D4CE-383A-422E-81B9-5CE044E70D88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB92D4CE-383A-422E-81B9-5CE044E70D88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB92D4CE-383A-422E-81B9-5CE044E70D88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB92D4CE-383A-422E-81B9-5CE044E70D88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73E9F4F4-E122-446A-AB78-ED62545B1366}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73E9F4F4-E122-446A-AB78-ED62545B1366}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73E9F4F4-E122-446A-AB78-ED62545B1366}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73E9F4F4-E122-446A-AB78-ED62545B1366}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8174FDA9-56D7-401A-A3BA-9D2FED775DDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8174FDA9-56D7-401A-A3BA-9D2FED775DDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8174FDA9-56D7-401A-A3BA-9D2FED775DDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8174FDA9-56D7-401A-A3BA-9D2FED775DDF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
