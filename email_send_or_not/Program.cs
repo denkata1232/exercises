@@ -4,7 +4,11 @@
     {
         static void Main(string[] args)
         {
-            string email = Console.ReadLine();
+            string input = Console.ReadLine();
+            Mail(input);
+        }
+        static void Mail(string email)
+        {
             int before = 0;
             int after = 0;
             int index = 0;
@@ -12,9 +16,9 @@
             {
                 index++;
             }
-            for(int i = 1; i <= email.Length; i++)
+            for (int i = 1; i <= email.Length; i++)
             {
-                if(index-i < 0)
+                if (index - i < 0)
                 {
                     break;
                 }
@@ -28,7 +32,7 @@
                 }
                 after += email[index + i];
             }
-            if(after-before <= 0)
+            if (after - before <= 0)
             {
                 Console.WriteLine("Call her!");
             }
