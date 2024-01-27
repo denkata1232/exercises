@@ -50,12 +50,12 @@ namespace bombs
                 if (i < power)
                 {
                     int lower = list.IndexOf(bomb) - 1;
-                    if(lower < list.Count && lower > 0)
+                    if(lower < list.Count && lower >= 0)
                     {
                         list.RemoveAt(lower);
                     }
                     int upper = list.IndexOf(bomb) + 1;
-                    if (upper < list.Count && upper > 0)
+                    if (upper < list.Count && upper >= 0)
                     {
                         list.RemoveAt(upper);
                     }
