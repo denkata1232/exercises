@@ -14,7 +14,7 @@ namespace letter_index
             stringBuilder.Insert(0, word);
             for (int i = 0; i < stringBuilder.Length; i++)
             {
-                int index = stringBuilder[i] - 2*'0'-1;
+                int index = stringBuilder[i] - 'a';
                 Console.WriteLine($"{stringBuilder[i]} -> {index}");
             }
             Console.WriteLine(stop.Elapsed);
