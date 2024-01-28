@@ -2,7 +2,69 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
+    {
+        string[] arr = Console.ReadLine()
+                .Split(new char[] { ' ' },StringSplitOptions.RemoveEmptyEntries)
+                .ToArray();
+            string[] command = Console.ReadLine()
+                .Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries)
+                .ToArray();
+            while (command[0] != "END")
+            {
+                if (command[0] == "Distinct")
+                {
+                    int leng = arr.Length;
+                    arr = arr.Distinct().ToArray();
+                    if(leng == arr.Length)
+                    {
+                        Console.WriteLine("Invalid input!");
+                    }
+                }
+                else if (command[0] == "Reverse")
+                {
+                    Array.Reverse(arr);
+                }
+                else if (command[0] == "Replace" && int.Parse(command[1])>=0 && int.Parse(command[1]) < arr.Length)
+                {
+                    int ind = int.Parse(command[1]);
+                    arr[ind] = command[2];
+                }
+                else
+                {
+                    Console.WriteLine("Invalid input!");
+                }
+                command = Console.ReadLine()
+                .Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries)
+                .ToArray();
+            }
+            Console.WriteLine(String.Join(" ",arr));
+    }
+        static int NumExtract(string command)
+        {
+            string num = null;
+            int number = 0;
+            for (int i = 0; i < command.Length; i++)
+            {
+                if (Char.IsDigit(command[i]))
+                {
+                    num += command[i];
+                }
+            }
+            if (num.Length > 0)
+            {
+                number = int.Parse(num);
+            }
+            for (int i = 0; i < command.Length; i++)
+            {
+                if (command[i]=='-')
+                {
+                    number = number * (-1);
+                }
+            }
+            return number;
+        }
+        static void NO()
         {
             string[] arr = Console.ReadLine()
                 .Split()
@@ -74,30 +136,6 @@
                 command = Console.ReadLine();
             }
             Console.WriteLine(String.Join(", ", arr));
-        }
-        static int NumExtract(string command)
-        {
-            string num = null;
-            int number = 0;
-            for (int i = 0; i < command.Length; i++)
-            {
-                if (Char.IsDigit(command[i]))
-                {
-                    num += command[i];
-                }
-            }
-            if (num.Length > 0)
-            {
-                number = int.Parse(num);
-            }
-            for (int i = 0; i < command.Length; i++)
-            {
-                if (command[i]=='-')
-                {
-                    number = number * (-1);
-                }
-            }
-            return number;
         }
     }
 }
